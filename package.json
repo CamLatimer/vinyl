@@ -28,7 +28,9 @@
     "babel-loader": "^8.0.0-beta.3",
     "config": "^1.30.0",
     "css-loader": "^0.28.11",
+    "dns": "^0.2.2",
     "file-loader": "^1.1.11",
+    "fs-extra": "^7.0.0",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.9.2",
     "html-webpack-plugin": "^3.2.0",
@@ -95,5 +97,10 @@
     "rxjs": "6",
     "styled-components": "^3.3.3",
     "subscriptions-transport-ws": "^0.9.15"
+  },
+  "jest": {
+    "globalSetup": "./test/setup/jest-setup.js",
+    "globalTeardown": "./test/setup/jest-teardown.js",
+    "testEnvironment": "./test/setup/puppeteer_environment.js"
   }
 }
