@@ -9,6 +9,8 @@ module.exports = (env, argv) => {
 	const isProduction = argv.mode === 'production';
 
 	let devtool, devServer, plugins;
+
+	//TODO: Potentially leverage node-config
 	const URLS = {
 		PROD: {
 			HTTP: 'https://us1.prisma.sh/jamesscottmcnamara/turntable/dev',
